@@ -21,3 +21,4 @@ A lightweight Chrome extension that renders ANSI escape codes inside `.txt` and 
 - Supports the 16 standard foreground and background colors, plus **bold**, *italic*, and underline.
 - Keeps things simple — no heavy dependencies, just a tiny parser.
 
+
