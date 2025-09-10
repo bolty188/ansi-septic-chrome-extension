@@ -4,24 +4,30 @@
     <meta charset="utf-8">
     <title>ANSI-Septic</title>
     <style>
-      body { font-family: system-ui, sans-serif; margin: 14px; min-width: 220px; }
+      body { font-family: system-ui, sans-serif; margin: 14px; min-width: 260px; }
       .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
       .title { font-weight: 600; }
       .hint { font-size: 12px; color: #666; margin-top: 10px; }
-      input[type="checkbox"] { width: 40px; height: 22px; }
-      a { color: inherit; }
-      code { background: #f5f5f5; padding: 2px 4px; border-radius: 4px; }
+      .col { display: grid; gap: 6px; }
+      label { display: flex; align-items: center; gap: 8px; }
+      button { padding: 6px 10px; border-radius: 8px; border: 1px solid #ccc; background: #fff; cursor: pointer; }
     </style>
   </head>
   <body>
     <div class="row">
       <div>
         <div class="title">ANSI-Septic</div>
-        <div>Render ANSI colors in .txt / .log</div>
+        <div></div>
       </div>
-      <label>
-        <input type="checkbox" id="toggle">
+      <label title="Enable/disable">
+        <input type="checkbox" id="toggle"><span>Enabled</span>
       </label>
+    </div>
+    <div class="col" style="margin-top:10px;">
+      <label title="Use black page background">
+        <input type="checkbox" id="darkbg"><span>Dark background</span>
+      </label>
+      <button id="rerender">Force render this tab</button>
     </div>
     <div class="hint" id="status"></div>
     <script src="popup.js"></script>
