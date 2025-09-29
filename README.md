@@ -18,6 +18,6 @@ A lightweight Chrome extension that renders ANSI escape codes inside `.txt` and 
 
 ## Notes
 
-- Keeps things simple — no heavy dependencies, just a tiny parser.
+- Keeps things simple... no heavy dependencies, just a tiny parser.
 
 
